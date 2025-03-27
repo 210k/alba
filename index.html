@@ -11,7 +11,7 @@
             const path = window.location.pathname.substring(1);
             if (!path) return;
             
-            const sheetAPI = "https://script.google.com/macros/s/AKfycbx-PtDhmaj1WSaZfuNW84t7508qSgxGsMcEtEORcKkfOOJJ27owfP0dj-F9BAohG0E/exec" + path;
+            const sheetAPI = "https://script.google.com/macros/s/AKfycbx-PtDhmaj1WSaZfuNW84t7508qSgxGsMcEtEORcKkfOOJJ27owfP0dj-F9BAohG0E/exec?short=" + path;
             try {
                 const response = await fetch(sheetAPI);
                 const url = await response.text();
